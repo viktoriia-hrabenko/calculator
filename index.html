@@ -1,12 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <!-- Modern-normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <!--Title-->
+    <title>IceCream Project Group 8</title>
 </head>
+
 <body>
+    <header class="header">
+        <div class="container header__content">
+            <a class="nav__logo" href="">
+                <img src="" alt="ice-cream-logo" />
+            </a>
+            <a href="" class="hamburger__lines hide-for-desktop">
+                <span class="line line__one"></span>
+                <span class="line line__two"></span>
+                <span class="line line__three"></span>
+            </a>
+            <div class="navigation__desktop hide-for-tablet">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a class="navigation__link navigation__link--active" href="">Home</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#about">About us</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#how">How it’s made?</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#products">Our products</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#contacts">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="button__buy hide-for-mobile">
+                Buy now
+                <img src="" alt="arrow-right" />
+            </button>
     
+            <div class="navigation__mobile is-hidden--menu">
+                <nav class="nav">
+                    <button class="button__buy">
+                        Buy now
+                        <img src="" alt="arrow-right" />
+                    </button>
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a class="navigation__link navigation__link--active" href="index.html">Home</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#about">About us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="navigation__link" href="#how">How it’s made?</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="navigation__link" href="#products">Our products</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="navigation__link" href="#contacts">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <a href="#top" class="toTop">^</a>
+
+    
+    <!--BACKDROP-->
+
+    
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <form action="" class="modal__form">
+                <div class="modal__form__container">
+                    <h3 class="modal__form__title">Zostaw swoje dane w formularzu poniżej</h3>
+    
+                    <label class="modal__form__label" for="imie">Imie
+                        <div class="modal__form__label__container">
+                            <input class="modal__form__input" type="text" required name="imie" id="imie" />
+                            <img class="modal__form__svg" src="" alt="" width="18" height="18" />
+                        </div>
+                    </label>
+    
+                    <label class="modal__form__label" for="tel">Telefon
+                        <div class="modal__form__label__container">
+                            <input class="modal__form__input" type="tel" required name="tel" id="tel" />
+                            <img class="modal__form__svg" src="" alt="" width="18" height="18" />
+                        </div>
+                    </label>
+    
+                    <label class="modal__form__label" for="mail">Email
+                        <div class="modal__form__label__container">
+                            <input class="modal__form__input" type="email" required name="email" id="mail" />
+                            <img class="modal__form__svg" src="" alt="" width="18" height="18" />
+                        </div>
+                    </label>
+    
+                    <label class="modal__form__label" for="comment">Wybierz produkt:
+                        <select class="modal__form__select" name="product" id="product" placeholder="wypierz produkt"
+                            required>
+                            <option value="ice cream">ICE CREAM</option>
+                            <option value="ice coffe">ICE COFFE</option>
+                            <option value="milkshakes">MILKSHAKES</option>
+                        </select>
+                    </label>
+    
+                    <label class="modal__form__label" for="comment">Ilość: (Max 20 szt)
+                        <input type="number" class="modal__form__select" name="quantity" id="quantity" placeholder="ilość"
+                            min="1" max="20" required>
+                        </input>
+                    </label>
+    
+                    <div class="modal__form__policy__container">
+                        <label class="modal__form__policy__label" for="policy">
+                            <input class="modal__form__policy__input" type="checkbox" unchecked required name="policy"
+                                id="policy" />
+                            <span class="modal__form__policy__checkmark">
+                                <img class="modal__form__policy__checkmark__svg" src="" alt=""
+                                    width="13" height="16" />
+                            </span>
+                            <div class="modal__form__policy__text">
+                                <span>Oświadczam iż akceptuję</span>
+                                <a class="modal__form__policy__link" href="#">Regulamin</a>
+                                <span>i</span>
+                                <a class="modal__form__policy__link" href="#">Politykę Prywatności.</a>
+                            </div>
+                        </label>
+                    </div>
+    
+                    <button class="modal__form__btn" type="submit">Wyślij</button>
+                </div>
+            </form>
+            <button class="modal__btn__close" data-modal-close>
+                <img src="" alt="" width="11" height="11" />
+            </button>
+        </div>
+    </div>
+
+
+
+<!--FOOTER-->
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer__flex">
+                <div class="footer__headline">
+                    <div class="footer__subheadline__one">homemade ice cream made</div>
+                    <div class="footer__subheadline__two">with passion</div>
+                </div>
+                <div class="footer__flex__links">
+                    <div class="footer__links">
+                        <a class="footer__links__background" target="_blank" href="https://www.github.com">
+                            <svg class="footer__links__icon__one" viewBox="0 0 32 32">
+                                <use class="footer__links__svg" href="" width="34" height="34"></use>
+                            </svg>
+                        </a>
+                        <a class="footer__links__background" target="_blank" href="https://telegram.org">
+                            <svg class="footer__links__icon__two" viewBox="0 0 44 32">
+                                <use class="footer__links__svg" href="" width="34" height="34"></use>
+                            </svg>
+                        </a>
+                        <a class="footer__links__background" target="_blank" href="https://www.facebook.com">
+                            <svg class="footer__links__icon__three" viewBox="0 0 16 32">
+                                <use class="footer__links__svg" href="" width="34" height="34"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer__contact">
+                        Feel free to contact
+                        <a class="footer__phone" href="tel:+61(0)383766284">+61 (0) 383 766 284</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__rights">
+            <div class="footer__rights__one">© 2019 - IceCream.</div>
+            <div class="footer__rights__two">All Rights Reserved.</div>
+        </div>
+    </section>
+
 </body>
+
 </html>
