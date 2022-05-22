@@ -57,7 +57,7 @@
       border-radius: 10px;
       transform-origin: 3px 1px;
       margin-bottom: 3px;
-      background: $darkRed;
+      background: $vivid-pink;
     }
   
     .line__one {
@@ -128,11 +128,11 @@
         align-items: center;
         justify-content: left;
         padding: 11px 0 11px 21px;
-        border-bottom: 1px solid $color-mobile-menu-border;
+        border-bottom: 1px solid #e18298;
         width: 100%;
   
         &:first-of-type {
-          border-top: 1px solid $color-mobile-menu-border;
+          border-top: 1px solid #e18298;
         }
       }
     }
