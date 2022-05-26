@@ -139,7 +139,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  &__bg-img {
+  .readMore__bg-img {
     background-image: url();
     background-repeat: no-repeat;
     background-position: center 92%;
@@ -167,7 +167,7 @@
     
 
     &__bg-img {
-      background-image: url();
+      background-image: url(../images/milk_background-desktop.png);
       background-repeat: no-repeat;
       background-position: center 120%;
       background-size: 100%;
